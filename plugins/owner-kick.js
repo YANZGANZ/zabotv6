@@ -18,6 +18,7 @@ handler.command = ['kick']
 handler.group = true
 handler.botAdmin = true
 handler.admin = true
+handler.owner = true
 
 export default handler
 
