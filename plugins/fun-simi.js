@@ -1,5 +1,5 @@
 import fetch from 'node-fetch'
-let handler = (m, {text}) => {
+let handler = async (m, {text}) => {
   let api = await fetch(`https://simsimi.info/api/?text=${text}&lc=id`)
   let res = api.json()
   m.reply(res.success)
